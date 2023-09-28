@@ -1,0 +1,240 @@
+*{
+     padding:0px; 
+     margin:0px; 
+     box-sizing:border-box; 
+    
+}
+.container{
+     height:100vh; 
+     weight:100vw; 
+     
+     
+}
+#navbar {
+     display: flex;
+     align-items: center;
+     position:relative
+}
+#navbar::before{
+     content:"";
+     background-color:black; 
+     position:absolute; 
+     height:100%; 
+     width:100%; 
+     z-index:-1 ; 
+     opacity:1.8; 
+     
+
+}
+#logo{
+     margin:10px 20px ; 
+}
+
+#navbar ul{
+     display: flex;
+}
+
+
+
+a{
+     display: block;
+     text-decoration: none;
+     padding:20px; 
+     border-radius: 20px;
+     color: black;
+}
+#navitems li{
+     list-style: none;
+     font-size: 20px; 
+}
+a:hover{
+     color:black; 
+     background-color: white;
+}
+/* home center  */
+#home{
+     display:flex; 
+     flex-direction: column;
+     padding:3px 200px ; 
+     height:465px; 
+     justify-content : center ; 
+     align-items: center;
+    ;
+}
+#home::before{
+     content:""; 
+     position:absolute;
+     background: url("bg1.jpg") no-repeat center center/cover;
+     height:100%; 
+     width:100%; 
+     z-index:-1; 
+     opacity:0.89; 
+
+}
+#heading{
+     font-size:50px; 
+     padding:15px; 
+     font-family: 'Bree Serif';
+    
+     text-align: center;
+}
+#home p{
+ padding:5px; 
+ font-size: larger;
+ font-family: 'Bree Serif';
+}
+#home button{
+ font-size:20px; 
+ margin:10px; 
+ padding:5px; 
+ border:2px solid black; 
+ border-radius: 10px;
+ cursor:pointer;
+  background-color: grey;
+}
+/* services center  */
+.primary{
+ font-size:3.8rem; 
+ padding:12px; 
+ text-align: center;
+ margin-top:160px; 
+ font-family: 'Bree Serif';
+}
+
+.secondary{
+font-family: 'Bree Serif';
+font-size:2.8rem; 
+padding:12px; 
+text-align: center ;
+}
+#services{
+margin:30px ; 
+display: flex;
+
+height:250px; 
+}
+#services .box{
+border: 2px solid red ; 
+height: 450px ; 
+width:2700px;
+ padding:20px; 
+ margin:14px; 
+ border-radius: 25px;
+ display: flex;
+ flex-direction: column;
+
+
+}
+#services .box img{
+
+ margin:auto; 
+ display: block;
+height: 160px;
+padding: 3px; ; 
+border-radius: 25px; 
+; 
+}
+#services .box p{
+font-family: 'Bree Serif', serif; 
+font-weight: normal;
+}
+
+/* Clients section */
+#clients-section{
+height:5px; 
+
+
+}
+#clients{
+display:flex; 
+justify-content :center ; 
+align-items: center;
+position:relative; 
+
+}
+#clients-section #primary{
+     
+          font-size:3.8rem; 
+          padding:20px; 
+          text-align: center;
+          margin-top:240px; 
+          font-family: 'Bree Serif';
+         
+}
+
+.client-item img{
+padding:34px; 
+
+}
+#clients-section::before{
+     content:""; 
+     position:absolute;
+     background: url("pexels-jane-doan-1092730.jpg") no-repeat center center/cover;
+     height:400px; 
+     width:100%; 
+     margin-top:30px; 
+     z-index:-1; 
+     opacity:0.2; 
+}
+/* Contact section */
+
+#primary{
+     margin-top: 400px;
+     font-size:3.8rem; 
+     font-family: 'Bree Serif'; 
+     text-align: center ;
+     padding: 40px;
+}
+#contact-box{
+     height:400px; 
+
+}
+#contact{
+     position:relative; 
+}
+#contact-section::before{
+     content:""; 
+     position:absolute;
+     background: url("contact.jpeg") no-repeat center center/cover;
+     height:80%; 
+     width:100%; 
+     z-index:-1; 
+     opacity:0.2; 
+     margin:10px; 
+}
+
+#contact-box{
+     display:flex; 
+     justify-content: center;
+     align-items: center ;
+     padding-bottom:35px; 
+}
+#contact-box input , #contact-box textarea{
+     width:100%; 
+     padding:0.5rem; 
+     border-radius: 10px;
+     font-size: 1.1rem;
+}
+#contact-box form{
+     width:60%; 
+     margin-top: 20px;
+}
+#contact-box label{
+     font-family: 'Bree Serif'; 
+     font-size:1.3rem; 
+  
+
+}
+
+
+/* footer  */
+footer{
+     background-color: black;
+     color:white; 
+     font-family: 'Bree Serif'; 
+     text-align: center ;
+     top:1000px; 
+
+
+}
+
